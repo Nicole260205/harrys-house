@@ -8,6 +8,12 @@ body {
   background-color: var(--bege);
   font-family: "Poppins", sans-serif;
 }
+h1{
+  font-family: 'Molika', serif;
+  color: var(--marrom);
+  font-weight: 300;
+  font-size: 28px;
+}
 
 @font-face {
   font-family: "Molika";
@@ -25,11 +31,11 @@ body {
   align-items: center;
   padding: 60px 123px;
   box-sizing: border-box;
-  margin-bottom: 70px;
 }
 .navbar-title {
   color: var(--marrom);
   font-weight: 100;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-links ul {
@@ -41,7 +47,7 @@ body {
   margin: 0;
 }
 .navbar li {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--marrom);
   cursor: pointer;
 }
@@ -64,33 +70,164 @@ body {
   background-color: var(--branco);
   color: var(--marrom);
 }
+
 /*Hero*/
 .hero {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 579px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 
 .hero-image {
-  width: 100%;
+  width: 689px;
   height: auto;
   display: block;
 }
 
 .hero-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 96px;
-  width: 100%;
-  text-align: center;
+  margin-top: -255px; 
+  font-size: 330px;
   color: #6F352A;
-  font-family: 'Molika', serif;
+  width: 100vw; 
+  text-align: center;
   z-index: 2;
   pointer-events: none;
+  line-height: 1;
+  position: relative;
+}
+
+/*About*/
+.about{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 150px 122px;
+}
+.about-image{
+  width: 471px;
+  height: 644px;
+  object-fit: cover;
+}
+.about-title{
+  font-size: 90px;
+  text-transform: capitalize;
+}
+.about-text{
+  width: 572px;
+  height: 465px;
+  color: var(--marrom);
+  font-size: 18px;
+}
+
+/*Album*/
+.title{
+  margin-bottom: 0;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;  /* Isso evita qualquer conteúdo extra visível */
+  width: 100%;
+  max-height: 950px;
+  height: 650px;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% * 3); /* ou albumData.length se quiser dinamizar via inline style */
+  transition: transform 1s ease-in-out;
+}
+
+.album-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 319px;
+  box-sizing: border-box;
+  gap: 74px;
+}
+
+.album-info {
+  max-width: 40%;
+}
+
+.album-heading {
+  font-size: 98px;
+  margin-bottom: 0.5rem;
+}
+
+.album-title {
+  font-size: 2.5rem;
+  margin: 0.2rem 0;
+}
+
+.album-meta {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: var(--marrom);
+}
+
+.tracklist ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 40px;
+  color: var(--marrom);
+}
+
+.tracklist li {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  font-size: 0.9rem;
+}
+
+.listen-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.4rem;
+  border: 1px solid #643C2B;
+  text-decoration: none;
+  color: #643C2B;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.listen-button:hover {
+  background: #643C2B;
+  color: white;
+}
+
+.album-image img {
+  width: 597.64px;
+  height: auto;
+}
+
+.carousel-dots {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dot {
+  width: 7px;
+  height: 10px;
+  border-radius: 50%;
+  background: #a87c5c;
+  opacity: 0.4;
+  border: none;
+  cursor: pointer;
+}
+
+.dot.active {
+  opacity: 1;
 }
