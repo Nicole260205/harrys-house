@@ -7,7 +7,8 @@ const albumData = [
     title: "Harry Styles",
     year: "2017",
     trackCount: 10,
-    listenLink: "https://open.spotify.com/album/1",
+    listenLink:
+      "https://open.spotify.com/intl-pt/album/1FZKIm3JVDCxTchXDo5jOV?si=tXDH_ieGRam5S8_uxjy7NA",
     image: vinil1,
     tracks: [
       { name: "Meet Me in the Hallway", duration: "3:47" },
@@ -26,7 +27,8 @@ const albumData = [
     title: "Fine Line",
     year: "2019",
     trackCount: 12,
-    listenLink: "https://open.spotify.com/album/2",
+    listenLink:
+      "https://open.spotify.com/intl-pt/album/7xV2TzoaVc0ycW7fwBwAml?si=vV0WdRnmQMygxvOUVrLhGg",
     image: vinil2,
     tracks: [
       { name: "Golden", duration: "3:29" },
@@ -47,7 +49,8 @@ const albumData = [
     title: "Harry’s House",
     year: "2022",
     trackCount: 13,
-    listenLink: "https://open.spotify.com/album/3",
+    listenLink:
+      "https://open.spotify.com/intl-pt/album/5r36AJ6VOJtp00oxSkBZ5h?si=ExG9TZEcT8aB8NzLUwnP5A",
     image: vinil3,
     tracks: [
       { name: "Music for a Sushi Restaurant", duration: "3:14" },
