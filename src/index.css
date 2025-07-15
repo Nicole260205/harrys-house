@@ -299,7 +299,7 @@ h1{
   object-fit: cover;
 }
 .about-title{
-  font-size: 90px;
+  font-size: 74px;
   text-transform: capitalize;
 }
 .about-text{
@@ -389,7 +389,7 @@ h1{
 }
 
 .album-title {
-  font-size: 2.5rem;
+  font-size: 74px;
   margin: 0.2rem 0;
 }
 
@@ -545,7 +545,7 @@ h1{
 }
 
 .mv-title {
-  font-size: 90px;
+  font-size: 74px;
   color: var(--marrom);
   margin-bottom: 40px;
 }
@@ -799,7 +799,6 @@ h1{
 .merch-title {
   font-size: 74px;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .merch-grid {
@@ -848,23 +847,28 @@ h1{
 }
 
 .merch-shop-text h1 {
-  font-size: 78px;
+  font-size: 60px;
   margin: 0;
   color: var(--marrom);
 }
 
 .merch-shop-button{
   width: 172px;
-  height: 40px;
-  text-transform: capitalize;
-  align-items: center;
-  justify-content: center;
+  height: 42px;
+  text-transform: uppercase;
+  margin: auto;
   background-color: var(--branco);
   color: var(--marrom);
   border: 1px solid var(--marrom);
   cursor: pointer;
-  width: fit-content;
+  transition: all 0.3s ease;
 }
+
+.merch-shop-button:hover {
+  background-color: var(--marrom);
+  color: var(--branco);
+}
+
 .merch-horizontal{
   width: 479.04px;
   height: 644px;
