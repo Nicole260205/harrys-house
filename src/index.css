@@ -788,6 +788,13 @@ h1{
 }
 
 /*Merch*/
+.merch{
+    display: flex;
+    justify-content: center;
+}
+.merch-title{
+    font-size: 74px;
+}
 
 /*Footer*/
 .footer {
@@ -880,4 +887,3 @@ h1{
   margin: 0;
   letter-spacing: 0.5px;
 }
-
