@@ -19,7 +19,6 @@ Projeto de uma **landing page interativa** inspirada no álbum *Harry's House* d
 - [Vite](https://vitejs.dev/)
 - HTML5 + CSS3 (customizados, sem frameworks)
 - JavaScript (ES6+)
-- [React Router DOM](https://reactrouter.com/) (se usado)
 
 ## Instalação
 
