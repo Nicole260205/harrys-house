@@ -25,9 +25,9 @@ Projeto de uma **landing page interativa** inspirada no álbum *Harry's House* d
 
 1 - Clone o projeto:
 
-`bash`
-`git clone https://github.com/Nicole260205/harrys-house.git`
-`cd harrys-house`
+`bash` <br>
+`git clone https://github.com/Nicole260205/harrys-house.git` <br>
+`cd harrys-house` <br>
 
 2 - Instale as dependências:
 
