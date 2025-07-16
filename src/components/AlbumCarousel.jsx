@@ -9,7 +9,7 @@ function AlbumCarousel() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % albumData.length);
-    }, 60000); // 60 segundos = 1 minuto
+    }, 12000); 
 
     return () => clearInterval(timer);
   }, []);
