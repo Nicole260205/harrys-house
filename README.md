@@ -21,3 +21,33 @@ Projeto de uma **landing page interativa** inspirada no álbum *Harry's House* d
 - JavaScript (ES6+)
 - [React Router DOM](https://reactrouter.com/) (se usado)
 
+## Instalação
+
+1 - Clone o projeto:
+
+`bash`
+`git clone https://github.com/Nicole260205/harrys-house.git`
+`cd harrys-house`
+
+2 - Instale as dependências:
+
+`npm install`
+
+3 - Execute localmente:
+
+`npm run dev`
+
+Acesse: http://localhost:5173
+
+## Estrutura
+📦 harrys-house <br>
+ ┣ 📂components<br>
+ ┣ 📂pages<br>
+ ┣ 📂assets<br>
+ ┣ App.jsx<br>
+ ┣ main.jsx<br>
+ ┣ index.css<br>
+ ┗ vite.config.js<br>
+
+## Autora
+Feito por @Nicole260205
