@@ -8,8 +8,8 @@ body {
   background-color: var(--bege);
   font-family: "Poppins", sans-serif;
 }
-h1{
-  font-family: 'Molika', serif;
+h1 {
+  font-family: "Molika", serif;
   color: var(--marrom);
   font-weight: 300;
 }
@@ -83,7 +83,9 @@ h1{
   color: var(--marrom);
   border: 1px solid var(--marrom);
 }
-
+.navbar-links .menu-button {
+  display: none;
+}
 /* Hamburger Menu Styles */
 .hamburger-menu {
   display: none;
@@ -111,67 +113,6 @@ h1{
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Mobile Responsive Styles */
-@media (max-width: 1024px) {
-  .navbar {
-    padding: 20px 30px;
-  }
-  
-  .navbar-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background-color: var(--branco);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: right 0.5s ease;
-    z-index: 5;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-links.mobile-open {
-    right: 0;
-  }
-  
-  .navbar-links ul {
-    flex-direction: column;
-    gap: 30px;
-    padding: 80px 0;
-  }
-  
-  .navbar-button {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 10;
-  }
-  
-  .hamburger-menu {
-    display: block;
-  }
-  
-  .navbar-title {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    padding: 15px 20px;
-  }
-  
-  .navbar-links {
-    width: 80%;
-  }
-  
-  .navbar-button .listen-button {
-    width: 100px;
-    font-size: 15px;
-  }
-}
 /*Hero*/
 .hero {
   display: flex;
@@ -189,174 +130,46 @@ h1{
 }
 
 .hero-title {
-  margin-top: -265px; 
+  margin-top: -265px;
   font-size: 330px;
-  color: #6F352A;
+  color: #6f352a;
   text-align: center;
   z-index: 2;
   pointer-events: none;
   line-height: 1;
   position: relative;
 }
-/* Media Queries for Responsive Adjustments */
-@media (max-width: 1200px) {
-  .hero-title {
-    font-size: 20vw;
-    line-height: 0.85;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    padding-top: 40px;
-  }
-  
-  .hero-title {
-    font-size: 22vw;
-    line-height: 0.9;
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    padding-top: 30px;
-  }
-  
-  .hero-title {
-    margin-top: -50px;
-    font-size: 15vw;
-    line-height: 1;
-  }
-  
-  .hero-image {
-    max-width: 100%;
-  }
-}
-
-/* Optional: Add this if you want to limit how small the text can get */
-@media (max-width: 360px) {
-  .hero-title {
-    font-size: 72px;
-  }
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-  .about-content {
-    gap: 30px;
-  }
-  
-  .about-image {
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-    gap: 40px;
-  }
-  
-  .about-image {
-    max-width: 100%;
-  }
-  
-  .about-text {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-  
-  .about-title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about {
-    padding: 40px 15px;
-  }
-  
-  .about-title {
-    font-size: 42px;
-  }
-  
-  .about-paragraph {
-    font-size: 16px;
-  }
-}
 
 /*About*/
-.about{
+.about {
   display: flex;
   justify-content: space-evenly;
   margin: 150px 122px;
 }
-.about-image{
+.about-image {
   width: 471px;
   height: 644px;
   object-fit: cover;
 }
-.about-title{
+.about-title {
   font-size: 74px;
   text-transform: capitalize;
 }
-.about-text{
+.about-text {
   width: 572px;
   height: 465px;
   color: var(--marrom);
   font-size: 18px;
 }
-/* RESPONSIVIDADE PARA A SEÇÃO ABOUT */
-@media (max-width: 1024px) {
-  .about {
-    flex-direction: column;
-    align-items: center;
-    margin: 100px 40px;
-    text-align: center;
-  }
-
-  .about-image {
-    width: 80%;
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 40px;
-  }
-
-  .about-title {
-    font-size: 60px;
-  }
-
-  .about-text {
-    width: 100%;
-    height: auto;
-    font-size: 16px;
-  }
-
-  .about-paragraph {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-title {
-    font-size: 42px;
-  }
-
-  .about-text {
-    font-size: 15px;
-  }
-}
 
 /*Album*/
-.title{
+.title {
   margin-bottom: 0;
 }
 
 .carousel-container {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   width: 100%;
   max-height: 950px;
   height: 650px;
@@ -365,7 +178,7 @@ h1{
 .carousel-inner {
   display: flex;
   flex-direction: column;
-  height: calc(100% * 3); 
+  height: calc(100% * 3);
   transition: transform 1s ease-in-out;
 }
 
@@ -419,15 +232,15 @@ h1{
   display: inline-block;
   margin-top: 2rem;
   padding: 0.6rem 1.4rem;
-  border: 1px solid #643C2B;
+  border: 1px solid #643c2b;
   text-decoration: none;
-  color: #643C2B;
+  color: #643c2b;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .listen-button:hover {
-  background: #643C2B;
+  background: #643c2b;
   color: white;
 }
 
@@ -459,85 +272,6 @@ h1{
 .dot.active {
   opacity: 1;
 }
-/* RESPONSIVIDADE TOTAL PARA CELULARES (até 768px) */
-@media (max-width: 768px) {
-  .carousel-container {
-    height: auto;
-    padding: 20px;
-  }
-
-  .carousel-inner {
-    flex-direction: row; /* vira carrossel horizontal */
-    height: auto;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .album-slide {
-    flex: none;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    scroll-snap-align: start;
-    gap: 20px;
-  }
-
-  .album-info {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .album-heading {
-    font-size: 36px;
-    margin-bottom: 1rem;
-  }
-
-  .album-title {
-    font-size: 1.5rem;
-  }
-
-  .album-meta {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-
-  .tracklist ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .tracklist li {
-    width: 100%;
-    font-size: 0.95rem;
-    justify-content: center;
-  }
-
-  .listen-button {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .album-image img {
-    width: 80%;
-    max-width: 300px;
-    height: auto;
-  }
-
-  .carousel-dots {
-    margin-top: 20px;
-    flex-direction: row;
-    justify-content: center;
-    position: static;
-  }
-
-  .dot {
-    width: 8px;
-    height: 8px;
-  }
-}
 
 /*MVs*/
 .mv-carousel {
@@ -554,7 +288,6 @@ h1{
   display: flex;
   gap: 30px;
 }
-
 
 .mv-main {
   flex: 2;
@@ -637,8 +370,6 @@ h1{
   }
 }
 
-
-
 /*Tour*/
 .tour {
   display: flex;
@@ -699,7 +430,7 @@ h1{
 }
 
 .more-shows a {
-  color: #6F352A;
+  color: #6f352a;
   text-decoration: none;
   font-weight: bold;
 }
@@ -707,7 +438,7 @@ h1{
 .more-shows button {
   background: none;
   border: none;
-  color: #6F352A;
+  color: #6f352a;
   font-weight: bold;
   cursor: pointer;
   display: flex;
@@ -727,66 +458,6 @@ h1{
 
 .arrow.up {
   transform: rotate(180deg);
-}
-
-/* RESPONSIVO TOUR — para telas menores que 768px */
-@media (max-width: 768px) {
-  .tour-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
-  .tour-table {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  .tour-table tbody {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .tour-table tr {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    align-items: flex-start;
-  }
-
-  .tour-table td {
-    padding: 6px 0;
-    text-align: left;
-    width: 100%;
-  }
-
-  .tour-table td:last-child {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
-  }
-
-  .tour-table button {
-    width: 100%;
-    height: auto;
-    padding: 10px 0;
-    font-size: 14px;
-  }
-
-  .more-shows {
-    margin-top: 20px;
-  }
-
-  .more-shows button {
-    font-size: 14px;
-  }
-
-  .arrow {
-    font-size: 14px;
-  }
 }
 
 /* Merch */
@@ -810,7 +481,7 @@ h1{
 .merch-left {
   display: flex;
   flex-direction: column;
-  gap: 21px; 
+  gap: 21px;
 }
 
 .merch-lateral {
@@ -827,10 +498,10 @@ h1{
 .merch-shop {
   background-color: white;
   padding: 20px;
-  display: flex; 
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 30px; 
+  gap: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -852,7 +523,7 @@ h1{
   color: var(--marrom);
 }
 
-.merch-shop-button{
+.merch-shop-button {
   width: 172px;
   height: 42px;
   text-transform: uppercase;
@@ -869,7 +540,7 @@ h1{
   color: var(--branco);
 }
 
-.merch-horizontal{
+.merch-horizontal {
   width: 479.04px;
   height: 644px;
 }
@@ -915,7 +586,7 @@ h1{
 .footer-newsletter label {
   font-size: 18px;
   text-align: start;
-  color: #6F352A;
+  color: #6f352a;
   margin-bottom: 5px;
 }
 
@@ -931,7 +602,7 @@ h1{
 .footer-newsletter button {
   padding: 10px 20px;
   width: 388px;
-  background-color: #6F352A;
+  background-color: #6f352a;
   color: white;
   border: none;
   cursor: pointer;
@@ -953,7 +624,7 @@ h1{
 }
 
 .social-icons a {
-  color: #6F352A;
+  color: #6f352a;
   transition: color 0.3s ease;
 }
 
@@ -970,4 +641,513 @@ h1{
   font-size: 14px;
   margin: 0;
   letter-spacing: 0.5px;
+}
+
+/* ────────────────────────────────────────────── */
+/* 📱 TELAS PEQUENAS - Celulares (até 480px) */
+/* ────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-links {
+    width: 80%;
+  }
+
+  .navbar-button .listen-button {
+    width: 100px;
+    font-size: 15px;
+  }
+
+  /* Hero */
+  .hero {
+    padding-top: 30px;
+  }
+
+  .hero-title {
+    margin-top: -55px;
+    font-size: 19vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  /* About */
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about-title {
+    font-size: 42px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  .about-paragraph {
+    font-size: 16px;
+  }
+  
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  .footer-image {
+    width: 80%;
+    height: auto;
+  }
+
+  .footer-newsletter {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer-newsletter input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+  }
+
+  .copyright {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+
+/* ────────────────────────────────────────────── */
+/* 📱📲 TELAS MÉDIAS - Celulares grandes / Tablets pequenos (481px – 768px) */
+/* ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Hero */
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero-title {
+    font-size: 22vw;
+    line-height: 0.9;
+    width: 90%;
+  }
+
+  /* About */
+  .about-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-text {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .about-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Album */
+  .carousel-container {
+    height: 1124px; /* Altura ajustada para caber um slide inteiro no mobile */
+    max-height: none;
+  }
+
+  .album-slide {
+    padding: 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .album-heading {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .album-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .album-info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .tracklist li {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 0.85rem;
+  }
+
+  .album-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .carousel-dots {
+    bottom: 10px;
+    right: 50%;
+    transform: translate(50%, 100%);
+    flex-direction: row;
+    justify-content: center;
+  }
+.tour-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.tour-table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tour-table tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tour-table tr {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  align-items: flex-start;
+}
+
+.tour-table td {
+  padding: 6px 0;
+  text-align: left;
+  width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.tour-table td:last-child {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.tour-table button {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.more-shows {
+  margin-top: 20px;
+}
+
+.more-shows button {
+  font-size: 14px;
+}
+
+.arrow {
+  font-size: 14px;
+}
+
+  /* Merch */
+  .merch-grid {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .merch-left {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .merch-lateral {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .merch-lateral img,
+  .merch-horizontal img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .merch-shop {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    width: 73%;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .merch-shop img {
+    width: 70vw;
+    max-width: 260px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .merch-shop-text h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .merch-shop-button {
+    width: 100%;
+    max-width: 172px;
+    height: 42px;
+    margin: 0 auto;
+  }
+
+  .merch-horizontal {
+    width: 77vw;
+    max-width: 479px;
+    height: auto;
+  }
+
+  .merch-title {
+    font-size: 54px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .mv-carousel {
+    margin: 40px 20px;
+  }
+
+  .mv-title {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .mv-slide {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mv-main {
+    width: 100%;
+  }
+
+  .mv-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mv-overlay span {
+    font-size: 0.9rem;
+  }
+
+  .mv-play {
+    font-size: 20px;
+  }
+
+  .mv-nav {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .mv-nav button {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+    .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  .footer-image {
+    width: 80%;
+    height: auto;
+  }
+
+  .footer-newsletter {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer-newsletter input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+  }
+
+  .copyright {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  
+}
+
+/* ────────────────────────────────────────────── */
+/* 💻 TELAS MÉDIAS-GRANDES - Tablets grandes e notebooks (769px – 1024px) */
+/* ────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  /* Navbar */
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--branco);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.5s ease;
+    z-index: 5;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links .menu-button {
+    display: block;
+    background-color: var(--marrom);
+    color: var(--branco);
+    border: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-links .menu-button:hover {
+    background-color: var(--branco);
+    color: var(--marrom);
+    border: 1px solid var(--marrom);
+  }
+
+  .navbar-links.mobile-open {
+    right: 0;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    gap: 30px;
+    padding: 80px 0;
+  }
+
+  .navbar-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navbar-title {
+    font-size: 22px;
+  }
+
+  /* About */
+  .about {
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 40px 30px 40px;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .about-title {
+    font-size: 70px;
+  }
+
+  .about-text {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .about-paragraph {
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    gap: 30px;
+  }
+  .tour {
+  padding: 15px;
+  max-width: 90%;
+}
+
+.tour-title {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.tour-table td {
+  padding: 15px 40px;
+}
+
+.tour-table button {
+  width: 140px;
+  height: 38px;
+  padding: 6px 15px;
+  font-size: 14px;
+}
+
+}
+
+/* ────────────────────────────────────────────── */
+/* 🖥️ TELAS GRANDES - Desktops menores que 1200px */
+/* ────────────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 19vw;
+    line-height: 0.85;
+  }
 }

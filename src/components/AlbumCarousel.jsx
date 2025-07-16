@@ -20,7 +20,6 @@ function AlbumCarousel() {
         className="carousel-inner"
         style={{
           transform: `translateY(-${(100 / albumData.length) * currentIndex}%)`,
-          height: `${albumData.length * 100}%`,
         }}
       >
         {albumData.map((album, index) => (
